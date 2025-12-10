@@ -119,3 +119,26 @@ a:hover{
     align-items: center;
     margin-top: 20px;
 }
+/* Blurred background */
+.blur-bg-section::before {
+  content: "Find your People, Not Just your Place";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://picsum.photos/id/42/450/300?blur=2'); /* your path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);       /* <-- blur here */
+  transform: scale(1.1);    /* avoids blur-edge cropping */
+  z-index: 1;
+}
+
+/* Your solid text */
+.blur-bg-section .content {
+  position: relative;
+  z-index: 2;               /* ABOVE the blur */
+  color: white;             /* or black, up to you */
+  padding: 20px;
+}
