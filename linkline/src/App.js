@@ -7,6 +7,7 @@ import Login from "./Login";
 import Navbar from "./Navbar";
 import Signup from "./Signup";
 import Admin from "./Admin";
+import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 export default function App() {
   return (
